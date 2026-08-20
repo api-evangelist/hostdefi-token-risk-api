@@ -1,0 +1,58 @@
+name: HostDeFi Token Risk API
+description: >-
+  Token-safety risk API from HostDeFi, a non-custodial multi-chain DEX (Solana + 7 EVM chains). Returns one-call A+–F
+  safety verdicts with 0–100 scores from on-chain checks (mint/freeze authority, LP lock, holder concentration,
+  honeypot/tax flags), plus pre-graduation signals, radar alerts, rug obituaries, and datasets. Offers a keyless free
+  tier, SOL-purchased API keys, a hosted MCP server, and x402 machine-payable endpoints.
+url: https://raw.githubusercontent.com/api-evangelist/hostdefi-token-risk-api/refs/heads/main/apis.yml
+created: '2026-08-20'
+modified: '2026-08-20'
+specificationVersion: '0.21'
+tags:
+  - crypto
+  - blockchain
+  - defi
+  - token-safety
+  - security
+  - solana
+  - ethereum
+  - evm
+  - mcp
+  - x402
+  - agent-native
+  - market-data
+apis:
+  - name: HostDeFi Token Risk API
+    description: >-
+      REST API returning A+–F token safety verdicts across Solana and 7 EVM chains, with keyless free tier,
+      SOL-purchased API keys, a hosted MCP server, and x402 pay-per-call endpoints.
+    humanURL: https://hostdefi.com/docs/api/
+    baseURL: https://hostdefi.com/api
+    tags:
+      - crypto
+      - blockchain
+      - defi
+      - token-safety
+      - security
+      - solana
+      - ethereum
+      - evm
+      - mcp
+      - x402
+      - agent-native
+      - market-data
+    properties:
+      - type: Documentation
+        url: https://hostdefi.com/docs/api/
+      - type: Documentation
+        url: https://hostdefi.com/docs/
+      - type: MCPServer
+        url: https://hostdefi.com/api/v1/mcp
+maintainers:
+  - FN: HostDeFi
+    url: https://t.me/hostdefiapps
+generated:
+  by: apis.io/add
+  model: claude-opus-4-8
+  confidence: 88
+  at: '2026-08-20T22:26:07.849Z'
