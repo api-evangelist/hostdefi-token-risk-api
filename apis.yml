@@ -1,9 +1,8 @@
 name: HostDeFi Token Risk API
 description: >-
-  Token-safety risk API from HostDeFi, a non-custodial multi-chain DEX (Solana + 7 EVM chains). Returns one-call A+–F
-  safety verdicts with 0–100 scores from on-chain checks (mint/freeze authority, LP lock, holder concentration,
-  honeypot/tax flags), plus pre-graduation signals, radar alerts, rug obituaries, and datasets. Offers a keyless free
-  tier, SOL-purchased API keys, a hosted MCP server, and x402 machine-payable endpoints.
+  Non-custodial multi-chain DEX (Solana + EVM) exposing a deterministic token risk grading API. Provides A+-F 'Safety
+  Read' verdicts, pre-graduation Solana signals, rug ledgers, and data products via a keyless free tier, SOL-purchased
+  API keys, and an x402 agent pay-per-call lane.
 url: https://raw.githubusercontent.com/api-evangelist/hostdefi-token-risk-api/refs/heads/main/apis.yml
 created: '2026-08-20'
 modified: '2026-08-20'
@@ -21,11 +20,17 @@ tags:
   - x402
   - agent-native
   - market-data
+  - rug-check
+  - dex
+  - blockchain-security
+  - on-chain-analytics
+  - agent-payments
 apis:
   - name: HostDeFi Token Risk API
     description: >-
-      REST API returning A+–F token safety verdicts across Solana and 7 EVM chains, with keyless free tier,
-      SOL-purchased API keys, a hosted MCP server, and x402 pay-per-call endpoints.
+      Public REST/HTTP API for token risk verdicts (A+-F grades), pre-graduation signals, radar, obituaries, and EVM
+      swap quotes. Keyless free tier (100 calls/day per IP) plus x-api-key paid tiers purchased with SOL. Includes a
+      live x402 pay-per-call agent surface confirmed via the /.well-known/x402 manifest.
     humanURL: https://hostdefi.com/docs/api/
     baseURL: https://hostdefi.com/api
     tags:
@@ -41,6 +46,11 @@ apis:
       - x402
       - agent-native
       - market-data
+      - rug-check
+      - dex
+      - blockchain-security
+      - on-chain-analytics
+      - agent-payments
     properties:
       - type: Documentation
         url: https://hostdefi.com/docs/api/
@@ -51,8 +61,10 @@ apis:
 maintainers:
   - FN: HostDeFi
     url: https://t.me/hostdefiapps
+  - FN: HostDeFi
+    url: https://hostdefi.com/
 generated:
   by: apis.io/add
   model: claude-opus-4-8
-  confidence: 88
-  at: '2026-08-20T22:26:07.849Z'
+  confidence: 90
+  at: '2026-08-20T23:10:07.754Z'
